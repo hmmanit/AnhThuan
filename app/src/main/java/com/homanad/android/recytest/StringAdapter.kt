@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class StringAdapter(
-    private val stringList: List<String>,
+    private val stringList: MutableList<String>,
     private val onItemSelected: (position: Int) -> Unit
 ) :
     RecyclerView.Adapter<StringAdapter.ItemHolder>() {
@@ -51,6 +51,13 @@ class StringAdapter(
     private fun selectItem(position: Int) {
         onItemSelected(position)
         notifyDataSetChanged()
+        swapItemToFirst(position)
+    }
+
+    private fun swapItemToFirst(swapPosition: Int) {
+        val swapItem = stringList[swapPosition]
+        stringList.removeAt(swapPosition)
+        stringList.add(0, swapItem)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemHolder {

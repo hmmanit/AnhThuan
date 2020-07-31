@@ -11,11 +11,17 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
+        val stringAdapter = StringAdapter(dummyList) {
+            //on selected
+        }
+
+        val myLayoutManager = LinearLayoutManager(this@MainActivity)
+        myLayoutManager.reverseLayout = true
+//        myLayoutManager.stackFromEnd = true
+
         rv_main.apply {
-            adapter = StringAdapter(dummyList) {
-                //on selected
-            }
-            layoutManager = LinearLayoutManager(this@MainActivity)
+            adapter = stringAdapter
+            layoutManager = myLayoutManager
         }
 
     }

@@ -1,6 +1,6 @@
 package com.homanad.android.recytest
 
-val dummyList = listOf<String>(
+val dummyList = mutableListOf(
     "Mức 1",
     "Mức 2",
     "Mức 3",
