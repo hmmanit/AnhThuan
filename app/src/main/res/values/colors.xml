@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="black">#000000</color>
+    <color name="red">#f40000</color>
+    <color name="colorPrimary_trans50">#8017ad74</color>
+    <color name="ripple_color">#80ffffff</color>
+    <color name="ripple_color_grey">#80cccccc</color>
+    <color name="color_main_bg">#f4f4f4</color>
+    <color name="color_main_bg_trans50">#80f4f4f4</color>
+    <color name="color_main_text">#0c9373</color>
+    <color name="color_main_button">#0d9b80</color>
+    <color name="color_seek_bar">#34B47B</color>
+
+    <!-- Login -->
+    <color name="btn_login_blue">@color/colorPrimary</color>
+    <color name="btn_login_blue_tran30">#4d1fa5ff</color>
+    <color name="btn_fb_login_blue">#45629e</color>
+    <color name="btn_gg_login_red">#f32e06</color>
+    <color name="version_grey">#a6a6a6</color>
+    <color name="dot_hide">#66f5f5f5</color>
+    <color name="dot_highlight">#ccf5f5f5</color>
+
+    <!-- Dashboard -->
+    <color name="navigation_grey">#f5f5f5</color>
+    <color name="navigation_grey_light">#f5f5f5</color>
+    <color name="nav_text_selected">#003C78</color>
+    <color name="nav_text_unselect">#acacac</color>
+    <color name="bg_black_trans40">#99000000</color>
+    <color name="bg_black_trans20">#33000000</color>
+    <color name="circle_grey">#cccccc</color>
+    <color name="bg_active">#ffffff</color>
+    <color name="grey">#9d9d9d</color>
+    <color name="sun_active">#ffc400</color>
+    <color name="goout_active">#c10000</color>
+
+    <!-- Room -->
+    <color name="thumb_active">#0084ff</color>
+    <color name="room_stroke_color">#b3dbfd</color>
+    <color name="edit_room_stroke_color">#CCCCCC</color>
+    <color name="title_dialog_grey">#f8f9fa</color>
+    <color name="dot_active">#62be00</color>
+    <color name="dot_disactive">#f40000</color>
+    <color name="circle_grey_trans25">#bfcccccc</color>
+    <color name="border_track">#808080</color>
+    <color name="image_border_circle_color">#b3dbfd</color>
+    <color name="bg_add_image_home">#dbdbdb</color>
+
+    <!-- Device Type -->
+    <color name="gateway_color">#7035dc</color>
+    <color name="smartlock_color">#f26522</color>
+    <color name="camera_color">#019799</color>
+    <color name="socket_color">#ffc600</color>
+    <color name="security_color">#f40000</color>
+    <color name="genvironment_color">#628c18</color>
+    <color name="curtain_color">#a30955</color>
+    <color name="controller_color">#b57818</color>
+    <color name="shadow_device">#80000000</color>
+
+    <!-- Room Detail -->
+    <color name="welcome_color">#950120</color>
+    <color name="cinema_color">#8560a8</color>
+
+    <!-- Air Conditioner -->
+    <color name="start">#00d2ff</color>
+    <color name="end">#e10000</color>
+    <color name="centre">#ffd800</color>
+    <color name="air_blue">#0084ff</color>
+    <color name="temp_air_conditioner">#6fd892</color>
+    <color name="button_stroke">#b5b5b5</color>
+    <color name="btn_back_tv">#339dff</color>
+    <color name="black_tran_90">#e6000000</color>
+    <color name="start_color_curtain">#0084ff</color>
+    <color name="end_color_curtain">#00182f</color>
+
+    <!-- Lamp -->
+    <color name="txt_seekbar_color">#818181</color>
+    <color name="lamp_item_bg">#33cccccc</color>
+
+    <!-- Forget pass -->
+    <color name="edt_bg">#ccffffff</color>
+
+    <!-- Mode -->
+    <color name="red_winter">#e80042</color>
+    <color name="green_env">#628c18</color>
+    <color name="green_doctor">#019799</color>
+    <color name="red_snow">#7a0026</color>
+    <color name="purple_cheer">#7035dc</color>
+    <color name="orange_fan">#f26522</color>
+    <color name="brown">#78543d</color>
+    <color name="mode_yellow">#ffc600</color>
+    <color name="bg_auto_condition_action">#e9e9e9</color>
+
+    <!-- Template -->
+    <color name="white">#ffffff</color>
+    <color name="white_trans_40">#66ffffff</color>
+    <color name="white_trans_25">#40ffffff</color>
+    <color name="white_trans_60">#99ffffff</color>
+
+    <!-- Sensor -->
+    <color name="vinsmart_red">#dc5147</color>
+    <color name="xiaomi_orange">#ff4a00</color>
+    <color name="sensor_info_bg">#f9f9f9</color>
+    <color name="temp_title">#f26c4f</color>
+    <color name="temp_info">#ffcbc0</color>
+    <color name="tvoc_title">#8560a8</color>
+    <color name="tvoc_info">#ddc5f3</color>
+    <color name="tvoc_fill">#1A8560a8</color>
+    <color name="co2_title">#01ad32</color>
+    <color name="co2_fill">#1a01ad32</color>
+    <color name="co2_info">#b5e4c2</color>
+    <color name="br_title">#ff8a00</color>
+    <color name="br_fill">#1aff8a00</color>
+    <color name="br_info">#ffdcb3</color>
+    <color name="hud_title">#448ccb</color>
+    <color name="hud_info">#b3dcff</color>
+
+    <!-- Account -->
+    <color name="button_gray">#cccccc</color>
+    <color name="layout_gray">#808080</color>
+
+    <!-- Brand IR -->
+    <color name="samsung_color">#0f307a</color>
+    <color name="sony_color">#0d0907</color>
+    <color name="panasonic_color">#283c6d</color>
+    <color name="gray">#cccccc</color>
+    <color name="account_item_info">#e1e1e1</color>
+
+    <color name="colorCardStart">#25242b</color>
+    <color name="colorCardEnd">#bb25242b</color>
+
+    <color name="status_hearing">#7B1FA2</color>
+    <color name="status_not_hearing">#757575</color>
+
+    <color name="seek_bar_progress">#1fa5ff</color>
+    <color name="seek_bar_aircond_progress">#42c6df</color>
+
+    <color name="bg_fan_air">#ccffffff</color>
+    <color name="color_day_night">#cc091520</color>
+
+    <color name="sensor_green">#5ab100</color>
+
+    <!-- Notification -->
+    <color name="green_notify">#61be01</color>
+    <color name="yellow_notify">#ffd101</color>
+
+    <color name="grey_dashboard">#eeeeee</color>
+    <color name="text_unselected">#929292</color>
+    <color name="bg_button_dialog_cancel">#929292</color>
+    <color name="text_title_unselected">#004b2d</color>
+    <color name="grey_btn_add_new">#dbdbdb</color>
+    <color name="grey_add_device">#d8d8d8</color>
+    <color name="white_trans70">#4dffffff</color>
+
+    <color name="start_air">#17ad47</color>
+    <color name="middle_air">#f7b500</color>
+    <color name="end_air">#dd4c1f</color>
+    <color name="grey_bg_fan">#e9e9e9</color>
+    <color name="tv_bg_controller">#e1e1e1</color>
+    <color name="tv_text_color">#6d7278</color>
+    <color name="bg_block_curtain_control">#33b4b4b4</color>
+    <color name="delete_start">#da6a47</color>
+    <color name="delete_end">#d63b39</color>
+    <color name="progress_bar_bg">#e0e0e0</color>
+    <color name="bg_wheel_location">#e5e5e5</color>
+    <color name="bg_quick_scene">#363636</color>
+    <color name="white_trans_50">#80ffffff</color>
+
+    <color name="text_voice">#3bb97a</color>
+
+    <color name="text_border">#80000000</color>
+
+    <array name="arc_colors_air">
+        <item>@color/seek_bar_aircond_progress</item>
+        <item>@color/seek_bar_aircond_progress</item>
+        <item>@color/seek_bar_aircond_progress</item>
+    </array>
+
+    <array name="progressAirCondGradientColors">
+        <item>@color/start_air</item>
+        <item>@color/middle_air</item>
+        <item>@color/end_air</item>
+    </array>
+</resources>

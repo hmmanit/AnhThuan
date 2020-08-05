@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_64dp">64dp</dimen>
+    <dimen name="app_24dp">16dp</dimen>
+    <dimen name="app_16dp">16dp</dimen>
+    <dimen name="app_8dp">4dp</dimen>
+    <dimen name="app_48dp">32dp</dimen>
+    <dimen name="app_56dp">50dp</dimen>
+    <dimen name="app_76dp">96dp</dimen>
+    <dimen name="app_20dp">20dp</dimen>
+    <dimen name="app_216dp">200dp</dimen>
+
+    <dimen name="device_room_size">72dp</dimen>
+    <dimen name="room_size">88dp</dimen>
+    <dimen name="room_image_size">80dp</dimen>
+    <dimen name="wheel_top_margin">32dp</dimen>
+    <dimen name="seek_lamp_top">16dp</dimen>
+    <dimen name="top_dimmer">24dp</dimen>
+    <dimen name="size_on_off_h">80dp</dimen>
+    <dimen name="size_on_off_w">70dp</dimen>
+    <dimen name="top_template">48dp</dimen>
+    <dimen name="top_disconnect">56dp</dimen>
+    <dimen name="top_dimmer_image">8dp</dimen>
+    <dimen name="top_seekbar">16dp</dimen>
+    <dimen name="top_vib">56dp</dimen>
+    <dimen name="top_led">72dp</dimen>
+</resources>

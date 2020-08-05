@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Washing</string>
+    <string name="location_colon">Location:</string>
+    <string name="delete">Delete</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="washing_program">Washing Program</string>
+    <string name="ultra_sonic_program">Ultra Sonic Program</string>
+    <string name="giatso">Chức năng giặt sơ</string>
+    <string name="giuthem">Chức năng giũ thêm</string>
+    <string name="giatudong">Cấp nước giặt tự động</string>
+    <string name="xatudong">Cấp nước xả tự động</string>
+    <string name="add_water">Thêm nước giặt</string>
+    <string name="finish">Xong</string>
+</resources>

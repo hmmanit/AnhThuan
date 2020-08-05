@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WashingProgramFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.09" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.91" />
+    <CheckBox
+        android:id="@+id/ckGiatTuDong"
+        android:layout_marginTop="@dimen/dimen_15dp_h"
+        android:layout_width="@dimen/dimen_51dp_w"
+        android:layout_height="@dimen/dimen_51dp_w"
+        android:layout_weight="1"
+        android:background="@drawable/checkbox_giattudong"
+        android:button="@null"
+        app:layout_constraintEnd_toStartOf="@+id/ckXaTuDong"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ckGiuThem"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.275" />
+
+
+    <CheckBox
+        android:id="@+id/ckGiuThem"
+        android:layout_marginTop="@dimen/dimen_15dp_h"
+        android:layout_width="@dimen/dimen_51dp_w"
+        android:layout_height="@dimen/dimen_51dp_w"
+        android:layout_weight="1"
+        android:background="@drawable/checkbox_giuthem"
+        android:button="@null"
+        app:layout_constraintEnd_toStartOf="@+id/ckGiatTuDong"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ckGiatSo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.275" />
+
+    <CheckBox
+        android:id="@+id/ckXaTuDong"
+        android:layout_marginTop="@dimen/dimen_15dp_h"
+        android:layout_width="@dimen/dimen_51dp_w"
+        android:layout_height="@dimen/dimen_51dp_w"
+        android:layout_weight="1"
+        android:background="@drawable/checkbox_xatudong"
+        android:button="@null"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ckGiatTuDong"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.275" />
+
+
+    <CheckBox
+        android:layout_marginTop="@dimen/dimen_15dp_h"
+        android:id="@+id/ckGiatSo"
+        android:layout_width="@dimen/dimen_51dp_w"
+        android:layout_height="@dimen/dimen_51dp_w"
+        android:layout_weight="1"
+        android:background="@drawable/checkbox_prewash"
+        android:button="@null"
+        app:layout_constraintEnd_toStartOf="@+id/ckGiuThem"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.275" />
+
+
+    <TextView
+        android:id="@+id/tvCreateIon"
+        android:layout_width="@dimen/dimen_56dp_w"
+        android:layout_height="wrap_content"
+        android:text="@string/giatso"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/dimen_10sp"
+        app:layout_constraintEnd_toEndOf="@+id/ckGiatSo"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ckGiatSo"
+        app:layout_constraintTop_toBottomOf="@id/ckGiatSo"
+        app:layout_constraintVertical_bias="0.098"
+        />
+
+    <TextView
+        android:id="@+id/tvUv"
+        android:layout_width="@dimen/dimen_60dp_w"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:text="@string/giuthem"
+        android:textSize="@dimen/dimen_10sp"
+        app:layout_constraintEnd_toEndOf="@+id/ckGiuThem"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ckGiuThem"
+        app:layout_constraintTop_toBottomOf="@+id/ckGiuThem"
+        app:layout_constraintVertical_bias="0.521" />
+
+    <TextView
+        android:id="@+id/tvLock"
+        android:layout_width="@dimen/dimen_60dp_w"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:text="@string/giatudong"
+        android:textSize="@dimen/dimen_10sp"
+        app:layout_constraintEnd_toEndOf="@+id/ckGiatTuDong"
+        app:layout_constraintStart_toStartOf="@+id/ckGiatTuDong"
+        app:layout_constraintTop_toBottomOf="@+id/ckGiatTuDong" />
+
+    <TextView
+        android:id="@+id/tvMute"
+        android:layout_width="@dimen/dimen_51dp_w"
+        android:layout_height="wrap_content"
+        android:text="@string/xatudong"
+        android:textSize="@dimen/dimen_10sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/ckXaTuDong"
+        app:layout_constraintStart_toStartOf="@+id/ckXaTuDong"
+        app:layout_constraintTop_toBottomOf="@+id/ckXaTuDong"
+        app:layout_constraintVertical_bias="0.521" />
+    <ImageView
+        android:id="@+id/ivBuzzer"
+        android:layout_width="@dimen/dimen_20dp_w"
+        android:layout_height="@dimen/dimen_23dp_h"
+        android:background="@drawable/ic_notifycation_off"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/tvCreateIon"
+        android:layout_marginTop="@dimen/dimen_14dp_h"/>
+    <CheckBox
+        android:layout_width="@dimen/dimen_20dp_w"
+        android:layout_height="@dimen/dimen_23dp_h"
+        android:background="@drawable/buzzer"
+        android:button="@null"
+        app:layout_constraintEnd_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/tvCreateIon"
+        android:layout_marginTop="@dimen/dimen_14dp_h"/>
+    <com.triggertrap.seekarc.SeekArc
+        android:id="@+id/seekArc"
+        android:layout_width="@dimen/dimen_256dp_w"
+        android:layout_height="@dimen/dimen_210dp_h"
+        android:layout_gravity="center"
+        android:padding="30dp"
+        app:layout_constraintLeft_toRightOf="@+id/ckGiatSo"
+        app:layout_constraintRight_toLeftOf="@+id/ckXaTuDong"
+        app:layout_constraintTop_toTopOf="@+id/ivBuzzer"
+        app:rotation="180"
+        app:startAngle="45"
+        app:sweepAngle="270"
+        app:touchInside="true"
+        app:arcColor="@color/color_seek_bar"
+        app:arcWidth="@dimen/dimen_4dp_w"
+        app:progressColor="@color/color_seek_bar"
+        app:progressWidth="@dimen/dimen_10dp_w"
+        app:thumb="@drawable/ic_thumb_progress"
+        />
+    <TextView
+        android:id="@+id/tvStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1:09:05"
+        android:textStyle="bold"
+        android:textSize="@dimen/dimen_14sp"
+        app:layout_constraintLeft_toLeftOf="@+id/ckGiatSo"
+        app:layout_constraintRight_toRightOf="@+id/ckGiatSo"
+        app:layout_constraintBottom_toBottomOf="@id/seekArc"
+        android:textColor="@color/color_main_text"
+        android:layout_marginBottom="@dimen/dimen_33dp_h"
+        />
+    <TextView
+        android:id="@+id/tvEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20:05"
+        android:textStyle="bold"
+        android:textSize="@dimen/dimen_14sp"
+        app:layout_constraintLeft_toLeftOf="@+id/ckXaTuDong"
+        app:layout_constraintRight_toRightOf="@+id/ckXaTuDong"
+        app:layout_constraintBottom_toBottomOf="@id/seekArc"
+        android:textColor="@color/color_main_text"
+        android:layout_marginBottom="@dimen/dimen_33dp_h"
+        />
+    <TextView
+        android:id="@+id/buttonWashingProgram"
+        android:layout_width="@dimen/dimen_148dp_w"
+        android:layout_height="@dimen/dimen_38dp_h"
+        app:layout_constraintLeft_toLeftOf="@+id/seekArc"
+        app:layout_constraintRight_toRightOf="@+id/seekArc"
+        app:layout_constraintTop_toBottomOf="@+id/seekArc"
+        android:text="@string/washing_program"
+        android:gravity="center"
+        android:background="@drawable/custom_buttom"
+        android:textAllCaps="false"/>
+    <ImageView
+        android:id="@+id/ivGiat"
+        android:layout_width="@dimen/dimen_50dp_w"
+        android:layout_height="@dimen/dimen_27dp_h"
+        android:background="@drawable/ic_giat"
+        android:layout_marginRight="@dimen/dimen_8dp_w"
+
+        app:layout_constraintRight_toLeftOf="@+id/ivGiu"
+        app:layout_constraintBottom_toBottomOf="@+id/ivGiu"
+
+        />
+
+    <ImageView
+        android:id="@+id/ivGiu"
+        android:layout_width="@dimen/dimen_50dp_w"
+        android:layout_height="@dimen/dimen_27dp_h"
+        android:background="@drawable/ic_giu"
+        android:layout_marginTop="@dimen/dimen_68dp_h"
+        app:layout_constraintBottom_toBottomOf="@+id/ivGiat"
+        app:layout_constraintEnd_toEndOf="@+id/buttonWashingProgram"
+        app:layout_constraintLeft_toRightOf="@+id/ivGiat"
+        app:layout_constraintStart_toStartOf="@+id/buttonWashingProgram"
+        app:layout_constraintTop_toTopOf="@+id/seekArc" />
+
+    <ImageView
+        android:id="@+id/ivVat"
+        android:layout_width="@dimen/dimen_50dp_w"
+        android:layout_height="@dimen/dimen_27dp_h"
+        android:background="@drawable/ic_vat"
+        android:layout_marginLeft="@dimen/dimen_8dp_w"
+        app:layout_constraintBottom_toBottomOf="@+id/ivGiu"
+        app:layout_constraintLeft_toRightOf="@+id/ivGiu"
+        app:layout_constraintTop_toTopOf="@+id/ivGiu" />
+    <TextView
+        android:id="@+id/tvGiu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_12sp"
+        android:text="Giũ"
+        app:layout_constraintTop_toBottomOf="@id/ivGiu"
+        app:layout_constraintLeft_toLeftOf="@+id/ivGiu"
+        app:layout_constraintRight_toRightOf="@+id/ivGiu"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_12sp"
+        android:text="Giặt"
+        app:layout_constraintTop_toBottomOf="@id/ivGiat"
+        app:layout_constraintLeft_toLeftOf="@+id/ivGiat"
+        app:layout_constraintRight_toRightOf="@+id/ivGiat"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_12sp"
+        android:text="Vắt"
+        app:layout_constraintTop_toBottomOf="@id/ivVat"
+        app:layout_constraintLeft_toLeftOf="@+id/ivVat"
+        app:layout_constraintRight_toRightOf="@+id/ivVat"
+        />
+    <TextView
+        android:id="@+id/tvWasingProgram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_14sp"
+        android:layout_marginTop="@dimen/dimen_5dp_h"
+        android:text="Vai bong"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvGiu"
+        app:layout_constraintLeft_toLeftOf="@+id/tvGiu"
+        app:layout_constraintRight_toRightOf="@+id/tvGiu"
+        />
+    <ImageView
+        android:id="@+id/ivBaoNuocXa"
+        android:layout_width="@dimen/dimen_21dp_w"
+        android:layout_height="@dimen/dimen_14dp_h"
+        android:layout_marginTop="@dimen/dimen_33dp_h"
+        android:background="@drawable/ic_bao_nuoc_xa"
+        app:layout_constraintTop_toBottomOf="@id/tvGiu"
+        app:layout_constraintLeft_toLeftOf="@+id/tvGiu"
+        app:layout_constraintRight_toRightOf="@+id/tvGiu"
+        />
+    <ImageView
+        android:id="@+id/ivWifi"
+        android:layout_width="@dimen/dimen_15dp_w"
+        android:layout_height="@dimen/dimen_11dp_h"
+        app:layout_constraintTop_toBottomOf="@id/ivBaoNuocXa"
+        app:layout_constraintLeft_toLeftOf="@+id/ivBaoNuocXa"
+        android:background="@drawable/ic_wifi"
+        android:layout_marginTop="@dimen/dimen_5dp_h"
+        app:layout_constraintRight_toRightOf="@+id/ivBaoNuocXa"/>
+    <ImageView
+        android:id="@+id/ivAddClother"
+        android:layout_width="@dimen/dimen_18dp_w"
+        android:layout_height="@dimen/dimen_14dp_h"
+        app:layout_constraintTop_toTopOf="@+id/ivBaoNuocXa"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBaoNuocXa"
+        app:layout_constraintRight_toLeftOf="@+id/ivBaoNuocXa"
+        android:layout_marginRight="@dimen/dimen_18dp_w"
+        android:background="@drawable/ic_add_clother"
+        />
+    <ImageView
+        android:id="@+id/ivBaoNuocGiat"
+        android:layout_width="@dimen/dimen_22dp_w"
+        android:layout_height="@dimen/dimen_14dp_h"
+        app:layout_constraintLeft_toRightOf="@+id/ivBaoNuocXa"
+        app:layout_constraintTop_toTopOf="@+id/ivBaoNuocXa"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBaoNuocXa"
+        android:layout_marginLeft="@dimen/dimen_18dp_w"
+        android:background="@drawable/ic_bao_nuoc_giat"/>
+    <ImageView
+        android:layout_width="@dimen/dimen_18dp_w"
+        android:layout_height="@dimen/dimen_10dp_h"
+        android:background="@drawable/ic_key"
+        app:layout_constraintTop_toTopOf="@+id/ivWifi"
+        app:layout_constraintBottom_toBottomOf="@+id/ivWifi"
+        app:layout_constraintLeft_toLeftOf="@+id/ivAddClother"
+        app:layout_constraintRight_toRightOf="@+id/ivAddClother"
+        />
+    <ImageView
+        android:layout_width="@dimen/dimen_14dp_w"
+        android:layout_height="@dimen/dimen_14dp_h"
+        android:background="@drawable/ic_child_lock"
+        app:layout_constraintLeft_toLeftOf="@+id/ivBaoNuocGiat"
+        app:layout_constraintRight_toRightOf="@+id/ivBaoNuocGiat"
+        app:layout_constraintTop_toTopOf="@+id/ivWifi"
+        app:layout_constraintBottom_toBottomOf="@+id/ivWifi"
+        />
+
+    <ImageButton
+        android:id="@+id/ibOnOff"
+        android:layout_width="@dimen/dimen_57dp_w"
+        android:layout_height="@dimen/dimen_62dp_w"
+        android:layout_weight="1"
+        android:background="@drawable/button_turn_off"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+    <ImageView
+        android:layout_width="@dimen/dimen_51dp_w"
+        android:layout_height="@dimen/dimen_51dp_w"
+        android:background="@drawable/ic_childlock"
+        app:layout_constraintTop_toTopOf="@+id/ibOnOff"
+        app:layout_constraintBottom_toBottomOf="@+id/ibOnOff"
+        app:layout_constraintLeft_toLeftOf="@+id/ckGiatSo"
+        app:layout_constraintRight_toRightOf="@+id/ckGiatSo"/>
+    <CheckBox
+        android:layout_width="@dimen/dimen_51dp_w"
+        android:layout_height="@dimen/dimen_51dp_w"
+        android:background="@drawable/checkbox_start"
+        app:layout_constraintTop_toTopOf="@+id/ibOnOff"
+        app:layout_constraintBottom_toBottomOf="@+id/ibOnOff"
+        app:layout_constraintLeft_toLeftOf="@+id/ckXaTuDong"
+        android:button="@null"
+        app:layout_constraintRight_toRightOf="@+id/ckXaTuDong"/>
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/rv_temp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="332dp"-->
+<!--        android:background="#5BA505"-->
+
+<!--        app:layout_constraintTop_toBottomOf="@+id/ivGiat"-->
+<!--        app:layout_constraintLeft_toLeftOf="@+id/ckGiatSo"-->
+<!--        app:layout_constraintRight_toRightOf="@+id/ckGiatSo"/>-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_temp"
+        android:layout_width="@dimen/dimen_70dp_w"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+
+        android:background="@drawable/border_recyclerview"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline3"
+        app:layout_constraintLeft_toLeftOf="@+id/ckGiatSo"
+        app:layout_constraintRight_toRightOf="@+id/ckGiatSo" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_temp1"
+        android:layout_width="@dimen/dimen_70dp_w"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+
+        android:background="@drawable/border_recyclerview"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline3"
+        app:layout_constraintLeft_toLeftOf="@+id/ckGiuThem"
+
+        app:layout_constraintRight_toRightOf="@+id/ckGiuThem" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_temp3"
+        android:layout_width="@dimen/dimen_70dp_w"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+
+        android:background="@drawable/border_recyclerview"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline3"
+        app:layout_constraintLeft_toLeftOf="@+id/ckGiatTuDong"
+        app:layout_constraintRight_toRightOf="@+id/ckGiatTuDong" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_temp4"
+        android:layout_width="@dimen/dimen_70dp_w"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+
+        android:background="@drawable/border_recyclerview"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline3"
+        app:layout_constraintLeft_toLeftOf="@+id/ckXaTuDong"
+        app:layout_constraintRight_toRightOf="@+id/ckXaTuDong" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.91" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

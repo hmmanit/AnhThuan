@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="column_dashboard">2</integer>
+    <integer name="column_room">4</integer>
+    <integer name="column_room_detail">6</integer>
+    <integer name="column_add_device">3</integer>
+</resources>

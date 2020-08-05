@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/one"
+        android:title="Nuoc lanh" />
+
+    <item
+        android:id="@+id/two"
+        android:title="30" />
+
+    <item
+        android:id="@+id/three"
+        android:title="40" />
+    <item
+        android:id="@+id/sixty"
+        android:title="60" />
+    <item
+        android:id="@+id/ninety"
+        android:title="90" />
+
+</menu>

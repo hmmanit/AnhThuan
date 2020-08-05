@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="isTablet">false</bool>
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+
+
+    <declare-styleable name="DaysOfWeekCheckBoxView">
+        <attr name="typeView" format="enum">
+            <enum name="type_normal" value="0"/>
+            <enum name="type_bolder" value="1"/>
+            <enum name="type_text_simple" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressBarView">
+        <attr name="min" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="progress" format="integer" />
+        <attr name="backgroundColor" format="color" />
+        <attr name="progressbarColor" format="color" />
+        <attr name="progressBarThickness" format="dimension" />
+
+    </declare-styleable>
+    <array name="tick_below_text_humidity">
+        <item>Off</item>
+        <item>"60%"</item>
+        <item>"65%"</item>
+        <item>"70%"</item>
+    </array>
+    <array name="tick_below_text_fan_PO800">
+
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+        <item>"5"</item>
+        <item></item>
+    </array>
+    <array name="tick_below_text_fan_PO400">
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item></item>
+    </array>
+</resources>

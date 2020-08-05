@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen_138dp_w"
+    android:layout_height="@dimen/dimen_40dp_h"
+    android:layout_margin="@dimen/dimen_5dp_w"
+    android:background="@drawable/boder_recyclerview"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_marginLeft="@dimen/dimen_5dp_w"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:text="Giặt nhẹ"
+                android:gravity="left"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"/>
+</LinearLayout>

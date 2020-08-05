@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_64dp">128dp</dimen>
+    <dimen name="app_24dp">24dp</dimen>
+    <dimen name="app_76dp">96dp</dimen>
+    <dimen name="app_20dp">20dp</dimen>
+    <dimen name="app_216dp">200dp</dimen>
+    <dimen name="app_56dp">50dp</dimen>
+
+    <dimen name="device_room_size">72dp</dimen>
+    <dimen name="room_size">88dp</dimen>
+    <dimen name="room_image_size">80dp</dimen>
+    <dimen name="wheel_top_margin">32dp</dimen>
+    <dimen name="top_dimmer">24dp</dimen>
+    <dimen name="size_on_off_h">80dp</dimen>
+    <dimen name="size_on_off_w">75dp</dimen>
+    <dimen name="top_template">48dp</dimen>
+    <dimen name="top_disconnect">56dp</dimen>
+    <dimen name="top_dimmer_image">8dp</dimen>
+    <dimen name="top_seekbar">16dp</dimen>
+    <dimen name="top_vib">56dp</dimen>
+    <dimen name="top_led">72dp</dimen>
+    <dimen name="device_bg_add_size">64dp</dimen>
+
+    <!--  Edit mode  -->
+    <dimen name="width_mode_image_bg">182dp</dimen>
+    <dimen name="height_mode_image_bg">110dp</dimen>
+    <dimen name="width_mode_image">68dp</dimen>
+    <dimen name="height_mode_image">60dp</dimen>
+    <dimen name="margin_top_mode_image">42dp</dimen>
+    <dimen name="margin_top_title_name_mode">20dp</dimen>
+    <dimen name="margin_top_device_list">20dp</dimen>
+    <dimen name="margin_top_automation_list">20dp</dimen>
+    <dimen name="margin_top_title_device_list">16dp</dimen>
+    <dimen name="margin_top_title_automation_list">16dp</dimen>
+    <dimen name="margin_bottom_button_save">110dp</dimen>
+
+    <!--  Favourite device  -->
+    <dimen name="favourite_margin_top_title_device_list">52dp</dimen>
+    <dimen name="favourite_margin_top_device_list">32dp</dimen>
+    <dimen name="favourite_margin_top_device_type">32dp</dimen>
+    <dimen name="favourite_margin_top_no_device">150dp</dimen>
+
+    <!--  Add more automation  -->
+    <dimen name="ama_margin_top_automation_list">32dp</dimen>
+
+    <!--  Setting my account  -->
+    <dimen name="sma_margin_top_layout_info">90dp</dimen>
+    <dimen name="sma_width_avatar_image">144dp</dimen>
+    <dimen name="sma_height_avatar_image">144dp</dimen>
+    <dimen name="sma_margin_top_title_information">80dp</dimen>
+    <dimen name="sma_margin_top_qr_code">6dp</dimen>
+
+    <!--  Setting edit account  -->
+    <dimen name="sea_margin_top_layout_info">90dp</dimen>
+    <dimen name="sea_width_avatar_image">144dp</dimen>
+    <dimen name="sea_height_avatar_image">144dp</dimen>
+    <dimen name="sea_margin_top_title_information">80dp</dimen>
+
+    <!--  Setting my home  -->
+    <dimen name="smh_width_home_icon">120dp</dimen>
+    <dimen name="smh_height_home_icon">120dp</dimen>
+
+    <!--  Setting add home  -->
+    <dimen name="sah_height_camera_image">192dp</dimen>
+
+    <!--  Setting config  -->
+    <dimen name="sc_margin_bottom_button_save">100dp</dimen>
+    <dimen name="sc_margin_top_fl_vib">28dp</dimen>
+</resources>

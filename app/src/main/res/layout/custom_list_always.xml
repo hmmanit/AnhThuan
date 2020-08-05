@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_5dp_w"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/boder_recyclerview"
+    android:layout_marginTop="@dimen/dimen_10dp_h">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_marginLeft="@dimen/dimen_5dp_w"
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:text="Giặt nhẹ"
+            android:textStyle="bold"
+            android:textSize="@dimen/dimen_16sp"
+            android:gravity="left"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <TableRow>
+            <TextView
+                android:layout_marginLeft="@dimen/dimen_7dp_w"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Nước giặt: Mức 1"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Nhiệt độ nước; 30"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_marginLeft="@dimen/dimen_7dp_w"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Nước xả: Mức 1"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Tốc độ vắt: 800 v/p"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
