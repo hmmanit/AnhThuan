@@ -1,20 +1,16 @@
 package com.example.washing
 
 import android.os.Bundle
-import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.PagerSnapHelper
-import androidx.recyclerview.widget.RecyclerView
 import com.example.washing.helper.OnSnapPositionChangeListener
 import com.example.washing.helper.SnapOnScrollListener
 import com.example.washing.helper.getSnapPosition
 import kotlinx.android.synthetic.main.fragment_ultra_sonic_program.*
-import kotlinx.android.synthetic.main.fragment_washing_program.*
 
 class UltraSonicProgramFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,52 +44,49 @@ class UltraSonicProgramFragment : Fragment() {
 
         val pagerSnapHelper = PagerSnapHelper()
 
-        val snapOnScrollListener = SnapOnScrollListener(
+        val imageOnScrollListener = SnapOnScrollListener(
             pagerSnapHelper,
-            onSnapPositionChangeListener
+            onImageSnapPositionChangeListener
         )
         rv_image.apply {
             adapter = stringTempAdapter
             layoutManager = myLayoutManager
             pagerSnapHelper.attachToRecyclerView(this)
-            addOnScrollListener(snapOnScrollListener)
+            addOnScrollListener(imageOnScrollListener)
         }
 
-        val titlePagerSnapHelper = PagerSnapHelper()
-        val titleSnapOnScrollListener = SnapOnScrollListener(
+        val titleOnScrollListener = SnapOnScrollListener(
             pagerSnapHelper,
-            onSnapPositionChangeListener2
+            onTitleSnapPositionChangeListener
         )
         rvTitle.apply {
             adapter = stringTitleAdapter
             layoutManager = myLayoutManager1
-            titlePagerSnapHelper.attachToRecyclerView(this)
-            addOnScrollListener(titleSnapOnScrollListener)
+            pagerSnapHelper.attachToRecyclerView(this)
+            addOnScrollListener(titleOnScrollListener)
         }
 
         button_left.setOnClickListener {
-            val currentPosition = titlePagerSnapHelper.getSnapPosition(rvTitle)
+            val currentPosition = pagerSnapHelper.getSnapPosition(rvTitle)
             if (currentPosition > 0)
                 rvTitle.smoothScrollToPosition(currentPosition - 1)
         }
 
         button_right.setOnClickListener {
-            val currentPosition = titlePagerSnapHelper.getSnapPosition(rvTitle)
-            if (currentPosition < stringTitleAdapter.itemCount)
+            val currentPosition = pagerSnapHelper.getSnapPosition(rvTitle)
+            if (currentPosition < stringTitleAdapter.itemCount - 1)
                 rvTitle.smoothScrollToPosition(currentPosition + 1)
         }
     }
 
-    private val onSnapPositionChangeListener = object : OnSnapPositionChangeListener {
+    private val onImageSnapPositionChangeListener = object : OnSnapPositionChangeListener {
         override fun onSnapPositionChanged(position: Int) {
-//            rvTitle.scrollToPosition(position)
             rvTitle.smoothScrollToPosition(position)
         }
     }
 
-    private val onSnapPositionChangeListener2 = object : OnSnapPositionChangeListener {
+    private val onTitleSnapPositionChangeListener = object : OnSnapPositionChangeListener {
         override fun onSnapPositionChanged(position: Int) {
-//            rv_image.scrollToPosition(position)
             rv_image.smoothScrollToPosition(position)
         }
     }
