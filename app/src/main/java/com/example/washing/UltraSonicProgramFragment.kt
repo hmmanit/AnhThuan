@@ -30,17 +30,14 @@ class UltraSonicProgramFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_ultra_sonic_program, container, false)
     }
 
-    private lateinit var stringTempAdapter: ImageAdapter
-    private lateinit var stringTitleAdapter: TitleFuntionAdapter
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         arguments?.takeIf { it.containsKey(Companion.ARG_OBJECT) }?.apply {
 //            textName.text = getInt(Companion.ARG_OBJECT).toString()
         }
-        stringTempAdapter = ImageAdapter(titelFuntion) {
+        val stringTempAdapter = ImageAdapter(titelFuntion) {
             //on selected
         }
-        stringTitleAdapter = TitleFuntionAdapter(titelFuntion) {
+        val stringTitleAdapter = TitleFuntionAdapter(titelFuntion) {
             //on selected
         }
         val myLayoutManager =
